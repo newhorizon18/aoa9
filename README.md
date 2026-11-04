@@ -106,6 +106,21 @@ int main() {
 }
 ```
 
+## Terminal Input (Copy and Paste)
+
+After running the program, copy and paste this entire input into the terminal:
+
+```text
+1 2 3 4
+5 6 0 8
+9 10 7 11
+13 14 15 12
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 0
+```
+
 ## Output
 
 ```text
@@ -149,21 +164,21 @@ Puzzle solved in 3 moves.
 To implement the 15-Puzzle Problem using a Greedy Heuristic Method in C.
 
 ## Theory
-The 15-Puzzle Problem consists of a 4×4 board with 15 numbered tiles and one empty space.
+The 15-Puzzle consists of a 4×4 board with 15 numbered tiles and one empty space.
 
 The goal is to arrange the tiles in the correct order by moving tiles into the empty space.
 
-The Greedy Method selects the next move based on the number of misplaced tiles.
+The Greedy Method selects moves based on the number of misplaced tiles.
 
 This simple method may stop at a local minimum and does not guarantee a solution for every puzzle.
 
 ## Algorithm
 1. Start the program.
 2. Enter the initial and target matrices.
-3. Find the position of the empty tile.
-4. Calculate the number of misplaced tiles.
-5. Check possible movements of the empty tile.
-6. Select a move that reduces misplaced tiles.
+3. Find the empty tile.
+4. Count the misplaced tiles.
+5. Check possible movements.
+6. Choose a move that reduces misplaced tiles.
 7. Repeat until solved or no better move exists.
 
 ## How to Run
@@ -176,11 +191,13 @@ This simple method may stop at a local minimum and does not guarantee a solution
 gcc puzzle.c -o puzzle
 ```
 
-**Step 3:** Run:
+**Step 3:** Run in PowerShell:
 
 ```powershell
 .\puzzle.exe
 ```
+
+**Step 4:** Copy the input from the Terminal Input section and paste it into the terminal.
 
 ## Time Complexity
 
@@ -191,4 +208,4 @@ gcc puzzle.c -o puzzle
 Where N = 4 for this puzzle.
 
 ## Conclusion
-Successfully implemented the 15-Puzzle Problem using a Greedy Heuristic Method in C and solved the given example in three moves.
+Successfully implemented the 15-Puzzle Problem using the Greedy Heuristic Method in C and solved the given example in three moves.
